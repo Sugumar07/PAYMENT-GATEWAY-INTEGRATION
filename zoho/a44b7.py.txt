@@ -1,0 +1,15 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+n=input()
+num=""
+char=""
+for i in n:
+    if i in "0123456789":
+        num=num+i;
+    else:
+        if(num!="" and char!=""):
+            printf(char*int(num),end='')
+        num=''
+        char=i;
+if(num!="" and char!=""):
+    print(char*int(num),end='')
